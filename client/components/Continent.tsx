@@ -11,6 +11,8 @@ function Continent() {
 
 
   console.log(continent)
+
+
   return (
     <div>
         <h2>{name}</h2>
@@ -19,7 +21,7 @@ function Continent() {
           {/* map over the continent array, and for each
         display a link to the country */}
           {continent.countries.map((country) => <li key={country.code}>
-            <Link to={`/continents/${name}/${country.code}`}>{country.name}</Link>
+            <Link to={`/continent/${name}/${country.code}`}>{country.name}</Link>
           </li>)}
         </ul>
       </div>

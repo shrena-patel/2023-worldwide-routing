@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import continentData from '../../data/continents'
 
 function Nav() {
@@ -10,8 +10,9 @@ function Nav() {
       <ul>
         {continentNames.map(continent => {
           return <li key={continent}>
-            <Link to={`/continents/${continent}`}>
-              {continent}</Link>
+            <NavLink to={`/continents/${continent}`} style={({ isActive }) => ({ 
+                            color: isActive ? 'darkblue' : 'darkpink' })}>
+              {continent}</NavLink>
           </li>
         })}
       

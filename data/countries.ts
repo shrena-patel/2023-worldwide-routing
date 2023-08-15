@@ -1,3 +1,15 @@
+export interface Country {
+  code: string,
+  name: string
+  capital: string,
+  areaSqKms: string,
+  population: string,
+  currencyCode: string,
+  currencyName: string,
+  neighbours: string,
+  flag: string
+}
+
 export default [
   {
     code: 'AD',
