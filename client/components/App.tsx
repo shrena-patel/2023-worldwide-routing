@@ -1,5 +1,5 @@
 import Nav from './Nav.tsx'
-import Home from './Home.tsx'
+import { Outlet } from 'react-router-dom'
 
 function App() {
   return (
@@ -14,7 +14,8 @@ function App() {
       {/* This 'main' div is only for styling (so we can use flexbox) */}
       <div className="main">
         <Nav />
-        <Home />
+        {/* outlet will be whatever the child component is in the route, like {{{body}}} in handlebars */}
+        <Outlet />
       </div>
     </>
   )
