@@ -8,14 +8,14 @@ import Home from './components/Home'
 import Continent from './components/Continent'
 import Country from './components/Country'
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
+export const routes = createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route index element={<Home />} />
       <Route path="continents/:name" element={<Continent />} />
       <Route path="continent/:name/:code" element={<Country />} />
     </Route>
   )
-)
+
+  export const router = createBrowserRouter(routes)
 
 export default router

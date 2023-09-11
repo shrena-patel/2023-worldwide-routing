@@ -22,9 +22,12 @@
   "license": "ISC",
   "devDependencies": {
     "@devacademy/eslint-config": "^1.8.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/jest-dom": "^6.0.0",
+    "@testing-library/user-event": "^14.4.3",
     "@types/react": "^18.0.23",
     "@types/react-dom": "^18.0.7",
-    "@vitejs/plugin-react": "^3.1.0",
+    "@vitejs/plugin-react": "^4.0.4",
     "@vitest/coverage-c8": "^0.30.1",
     "esbuild": "^0.18.18",
     "eslint": "^8.10.0",
@@ -35,15 +38,16 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "jsdom": "^22.1.0",
     "npm-run-all": "^4.1.5",
     "prettier": "2.6.1",
-    "react": "^18.0.2",
+    "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2",
     "tsx": "^3.12.7",
     "typescript": "^5.1.6",
-    "vite": "^4.2.1",
-    "vitest": "^0.30.1"
+    "vite": "^4.4.9",
+    "vitest": "^0.34.3"
   },
   "prettier": {
     "semi": false,
