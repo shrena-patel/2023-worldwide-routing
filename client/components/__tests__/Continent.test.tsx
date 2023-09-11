@@ -8,6 +8,17 @@ describe('<Continent/>', () => {
     const img = screen.getByAltText('Africa-continent')
     expect(img).toHaveAttribute('src', '/images/South-Africa.jpg')
   })
-})
 
-// might need to use findByRole instead of getByRole that is shown in video
+  it('user can view the neighbours of a country', async () => {
+    const { user, ...screen } = renderApp('/continents/Africa')
+    const countryLink = screen.getByText(/Burundi/)
+
+    await user.click(countryLink)
+
+    // at this point in memory router it has gone to the Burundi Country page
+    const countryNeighbour = await screen.findByText(/Tanzania/)
+    expect(countryNeighbour).toBeVisible()
+  })
+
+  
+})
