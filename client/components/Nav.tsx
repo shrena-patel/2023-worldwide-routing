@@ -3,7 +3,6 @@ import continentData from '../../data/continents'
 
 function Nav() {
   const continentNames = Object.keys(continentData)
-  console.log(continentNames)
   return (
     <div>
       <h2>Nav</h2>

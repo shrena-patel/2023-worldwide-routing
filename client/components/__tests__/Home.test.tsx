@@ -9,4 +9,10 @@ describe('<Home/>', () => {
     expect(message).toBeVisible()
   })
 
+  it('gives users a message to select a continent', async () => {
+    const { ...screen } = renderApp('/')
+    const message = screen.getByText(/Please select a continent from the nav list/)
+    expect(message).toBeVisible()
+  })
+
 })

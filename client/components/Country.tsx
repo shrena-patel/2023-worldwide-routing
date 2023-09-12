@@ -25,7 +25,7 @@ function Country () {
   // then map over the neighbours array
   // for each neighbour in the array, find where the country code from 'country' equals the code that is neighbour
   const neighboursObjs = neighbours.map(neighbour => countriesData.find(country => country.code === neighbour))
-  console.log(neighbours)
+  // console.log(neighbours)
   // we can then use this 'neighbours' array and map over it in the return
   // in order to render an <li> for each neighbour that is found
   return (
